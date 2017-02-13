@@ -1,0 +1,417 @@
+/*CSS Reset*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /*height: 2620px;	*/
+    text-align: center;
+    color: #212c38;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a:hover,
+a:link,
+a:active,
+a:visited,
+a {
+    text-decoration: none;
+    background: none;
+}
+
+
+/*Header*/
+
+header {
+    /*position: fixed;*/
+    width: 100%;
+    z-index: 1;
+}
+
+header,
+footer {
+    background: #6C7A89;
+}
+
+header nav {
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+}
+
+header nav a {
+    font: 18px Goethe;
+    color: #ececec;
+    padding: 20px;
+}
+
+a:hover {
+    color: #171717;
+}
+
+.contact {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 10px;
+}
+
+.contact a {
+    width: 30px;
+    height: 30px;
+    text-indent: -99999px;
+    display: inline-block;
+    background: url('../img/icon_sprite.png') no-repeat;
+    background-size: 407%;
+    padding: 6px 0;
+}
+
+.contact a.email {
+    background-position: 7px -27px;
+}
+
+a.email:hover {
+    background-position: 7px 17px;
+}
+
+.contact a.facebook {
+    background-position: -94px -26px;
+}
+
+a.facebook:hover {
+    background-position: -94px 12px;
+}
+
+.contact a.linkedin {
+    background-position: -59px -26px;
+}
+
+a.linkedin:hover {
+    background-position: -59px 13px;
+}
+
+
+/*Home*/
+
+.title {
+    font: 5em BEBAS;
+}
+
+.description {
+    font: 2.1875em Goethe;
+}
+
+
+/*Portfolio*/
+
+#portfolio {
+    font-size: 0.75em;
+    ;
+}
+
+#portfolio ul {
+    margin: 20px auto 40px;
+    width: 70%;
+}
+
+#portfolio ul li {
+    display: inline-block;
+    margin: 20px 3%;
+}
+
+#portfolio figure {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 200px;
+    border: #212c38 solid 5px;
+    margin: 20px;
+    -webkit-box-shadow: 10px 10px 10px #888888;
+}
+
+#portfolio figure img {
+    -webkit-filter: opacity(0.9);
+    width: 200px;
+    height: 200px;
+}
+
+#portfolio figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    font-size: .7em;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .8);
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+}
+
+#portfolio figure:hover figcaption {
+    opacity: 1;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#aa000000, endColorstr=#aa000000);
+}
+
+#portfolio figcaption * {
+    padding: 0 10px;
+    margin: 0;
+}
+
+#portfolio figcaption *:first-child {
+    padding-top: 5px;
+    font: 20px Goethe;
+    padding: 21px;
+}
+
+#portfolio figcaption *:last-child {
+    padding-bottom: 5px;
+    font: 14px Goethe;
+}
+
+#portfolio figcaption p {
+    vertical-align: middle;
+}
+
+
+/*About*/
+
+#about {}
+
+
+/*Contact*/
+
+#contact {}
+
+#contact ul {
+    display: block;
+    height: 53px;
+    ;
+}
+
+#contact ul li,
+#contact ul li figure {
+    /*display: inline;*/
+    /*width:40px;
+	height: 40px;*/
+}
+
+#contact .icon {
+    /*width: 40px;
+	height: 40px;*/
+}
+
+#contact .email {
+    background: url(../img/icon_sprite.png);
+}
+
+
+/*Footer*/
+
+#home figure {
+    margin: 0;
+    padding: 20px 0;
+}
+
+img.line {
+    margin: 20px 0 0;
+}
+
+h2.description {
+    text-align: center;
+}
+
+h3.title {
+    font-size: 3.75em;
+}
+
+.description {
+    font-size: 1.5625em;
+    max-width: 65%;
+    margin: 50px auto;
+    text-align: justify;
+}
+
+footer p {
+    font: 14px Goethe;
+    color: #ececec;
+    padding: 13px;
+}
+
+section {
+    margin: 2% auto;
+}
+
+.modal,
+.modal-overlay {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.modal.active,
+.modal-overlay.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+#contact {
+    height: 50px;
+}
+
+#contact nav ul li {}
+
+.icon_linkedin {
+    background: transparent url('../img/icons.png') no-repeat;
+    text-indent: -99999999px;
+    background-position: -52px 0;
+    width: 50px;
+    height: 50px;
+    display: inline;
+}
+
+.icon_mail {
+    background: transparent url('../img/icons.png') no-repeat;
+    text-indent: -99999999px;
+    background-position: -104px 0;
+    width: 50px;
+    height: 50px;
+    display: inline;
+}

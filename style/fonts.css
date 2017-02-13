@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'BEBAS';
+    src: url('../fonts/BEBAS/BEBAS.eot');
+    src: url('../fonts/BEBAS/BEBAS.eot') format('embedded-opentype'),
+         url('../fonts/BEBAS/BEBAS.woff') format('woff'),
+         url('../fonts/BEBAS/BEBAS.ttf') format('truetype'),
+         url('../fonts/BEBAS/BEBAS.svg#BEBAS') format('svg');
+}
+@font-face {
+    font-family: 'Goethe';
+    src: url('../fonts/Goethe/GoetheGothic.eot');
+    src: url('../fonts/Goethe/GoetheGothic.eot') format('embedded-opentype'),
+         url('../fonts/Goethe/GoetheGothic.woff') format('woff'),
+         url('../fonts/Goethe/GoetheGothic.ttf') format('truetype'),
+         url('../fonts/Goethe/GoetheGothic.svg#GoetheGothic') format('svg');
+}
